@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import SearchForm from "./SearchForm";
 
 class Nav extends Component {
+  // creates new route based on query6
   newRoute = query => {
     window.location.assign(`/search/${query}`);
   };
