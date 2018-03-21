@@ -17,6 +17,7 @@ class SearchForm extends Component {
     e.preventDefault();
   };
 
+  // clear state to reset input value
   handleReset = () => {
     this.setState(() => ({
       searchInput: ""
@@ -26,6 +27,7 @@ class SearchForm extends Component {
   render() {
     return (
       <form className="search-form" onSubmit={this.handleSubmit}>
+        {/* grab input value and set value according to state */}
         <input
           type="text"
           placeholder="Search"
@@ -34,6 +36,7 @@ class SearchForm extends Component {
           onChange={this.handleChange}
         />
 
+        {/*  render Results based on dynamic Link, onClick added to behave like a form submit */}
         <Link
           className="search-button"
           to={`/search/${this.state.searchInput}`}

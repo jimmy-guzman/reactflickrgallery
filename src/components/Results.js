@@ -9,6 +9,8 @@ class Results extends React.Component {
     photos: null,
     query: ""
   };
+
+  //clear photos state and then fetch new photos and set state
   updateResults = async query => {
     this.setState(() => ({
       query,
@@ -17,15 +19,16 @@ class Results extends React.Component {
     const photos = await fetchResults(query);
     this.setState(() => ({ photos }));
   };
+
+  //fetch photos by current params when Results component mounts
   componentDidMount() {
     this.updateResults(this.props.match.params.query);
   }
-  componentWillReceiveProps = nextProps => {
-    const currentQuery = this.props.match.params.query;
-    const nextQuery = nextProps.match.params.query;
 
-    if (currentQuery !== nextQuery) {
-      this.updateResults(nextQuery);
+  //if there's a change in query params fetch photos
+  componentWillReceiveProps = nextProps => {
+    if (this.state.query !== nextProps.match.params.query) {
+      this.updateResults(nextProps.match.params.query);
     }
   };
 
@@ -33,6 +36,7 @@ class Results extends React.Component {
     const { photos, query } = this.state;
     return (
       <div className="photo-container">
+        {/* wait for flickr api request then if there's photos render Photos if not render NotFound */}
         {!photos ? (
           <Loading />
         ) : photos.length > 0 ? (

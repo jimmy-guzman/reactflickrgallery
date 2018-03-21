@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 const Photos = ({ photos }) => (
   <ul>
+    {/* map through photos fetched and render images */}
     {photos.map(({ id, farm, server, secret }) => (
       <li key={id}>
         <img
