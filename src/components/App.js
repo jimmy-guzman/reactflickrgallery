@@ -3,10 +3,12 @@ import Home from "./Home";
 import Nav from "./Nav";
 import Results from "./Results";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import SearchForm from "./SearchForm";
 
 const App = () => (
   <BrowserRouter>
     <div className="container">
+      <SearchForm />
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />

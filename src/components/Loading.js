@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-class Loading extends React.Component {
+class Loading extends Component {
   static propTypes = {
     text: PropTypes.string.isRequired,
     speed: PropTypes.number.isRequired
@@ -9,7 +9,7 @@ class Loading extends React.Component {
 
   static defaultProps = {
     text: "Loading",
-    speed: 50
+    speed: 100
   };
 
   state = {

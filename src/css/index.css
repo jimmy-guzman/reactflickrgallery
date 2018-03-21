@@ -25,16 +25,26 @@ a {
   width: 100%;
   display: flex;
   margin: 0 auto 32px;
-  order: -1;
 }
 .search-form button {
+  outline: none;
+  background-color: inherit;
+  border: none;
+  border-radius: 0 0.35em 0.35em 0;
+  cursor: pointer;
+}
+
+.search-button {
   outline: none;
   background-color: #438bbd;
   border: none;
   padding: 0px 15px;
   border-radius: 0 0.35em 0.35em 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
+
 input {
   font-size: 1em;
   width: 100%;
@@ -59,7 +69,7 @@ input {
 }
 .main-nav .active,
 .main-nav a:hover,
-.search-form button:hover {
+.search-form a:hover {
   background-color: #275270;
 }
 .photo-container ul {
