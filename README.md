@@ -6,7 +6,7 @@
 
 ## To run this project locally:
 
-* First, request non-commercial Flickr API Key from [here], if you don't have one(https://www.flickr.com/services/apps/create/apply/).
+* First, if you don't have a non-commercial Flickr API Key, request one from [here](https://www.flickr.com/services/apps/create/apply/).
 
 * Second, create a config file with your apiKey
   * Create this `config.js` file inside of `reactflickrgallery/src/utils` folder :
