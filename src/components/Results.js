@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Photos from "./Photos";
 import Loading from "./Loading";
 import NotFound from "./NotFound";
@@ -40,10 +40,10 @@ class Results extends React.Component {
         {!photos ? (
           <Loading />
         ) : photos.length > 0 ? (
-          <div>
+          <Fragment>
             <h2>"{query}" Results</h2>
             <Photos photos={photos} />
-          </div>
+          </Fragment>
         ) : (
           <NotFound />
         )}
