@@ -20,3 +20,7 @@ yarn-error.log*
 
 # api config
 /src/utils/config.js
+
+# firebase config
+.firebaserc
+firebase.json
