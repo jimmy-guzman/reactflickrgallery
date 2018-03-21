@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.3em;
+}
+
 .container {
   display: flex;
   flex-direction: column;

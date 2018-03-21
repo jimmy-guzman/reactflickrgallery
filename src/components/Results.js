@@ -36,7 +36,7 @@ class Results extends React.Component {
     const { photos, query } = this.state;
     return (
       <div className="photo-container">
-        {/* wait for flickr api request then if there's photos render Photos if not render NotFound */}
+        {/* wait for flickr api request then if there's photos, render Photos, if not render NotFound */}
         {!photos ? (
           <Loading />
         ) : photos.length > 0 ? (
