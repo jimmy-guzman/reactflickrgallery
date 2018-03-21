@@ -60,7 +60,6 @@ input {
   margin-bottom: 1em;
 }
 .main-nav a {
-  width: 100%;
   display: block;
   background: #438bbd;
   border-radius: 3px;
@@ -120,6 +119,6 @@ input {
   }
   .main-nav li {
     margin: 10px;
-    width: 100px;
+    width: 150px;
   }
 }
