@@ -1,25 +1,24 @@
-# React Flick Gallery
+# React Flickr Gallery
 
 ## Treehouse Techdegree Project 11
 
 ## [Live Demo](https://reactflickrgallery.jimmyguzman.com/)
 
-## To run this project locally and to view code, follow these steps:
+## To run this project locally:
 
-* Request non-commercial Flickr API Key [here](https://www.flickr.com/services/apps/create/apply/).
+* First, request non-commercial Flickr API Key from [here], if you don't have one(https://www.flickr.com/services/apps/create/apply/).
 
-* Setup Config File
-  * Open `reactflickrgallery/src/utils` and create this `config.js` file:
+* Second, create a config file with your apiKey
+  * Create this `config.js` file inside of `reactflickrgallery/src/utils` folder :
 
 ```javascript
 const apiKey = "YOUR_KEY_HERE";
 export default apiKey;
 ```
 
-* Start Project
+* Then, you're ready to go, start project by
 
 ```bash
-cd reactflickrgallery
 npm install
 npm start
 ```
@@ -31,4 +30,5 @@ npm start
 ## Made with:
 
 * React
+* Create-React-App
 * Flickr API
