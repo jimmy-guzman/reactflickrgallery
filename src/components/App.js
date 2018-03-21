@@ -1,19 +1,17 @@
 import React from "react";
-import Home from "./Home";
-import Nav from "./Nav";
-import Results from "./Results";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import SearchForm from "./SearchForm";
+import Home from "./Home";
+import Nav from "./Nav";
 
 const App = () => (
   <BrowserRouter>
     <div className="container">
-      <SearchForm />
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/search" component={Results} />
-        <Route path="/search/:query" component={Results} />
+        <Route path="/search" component={SearchForm} />
+
         <Route
           render={() => (
             <h2>404 error: URL does not match any existing paths!</h2>

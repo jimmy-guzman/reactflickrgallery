@@ -4,15 +4,18 @@ body {
   color: #3f4850;
   overflow-y: scroll;
 }
+
 h2 {
   font-size: 2em;
   margin: 52px 0 40px;
   text-transform: capitalize;
 }
+
 ul {
   list-style-type: none;
   padding-left: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -25,12 +28,15 @@ p {
   display: flex;
   flex-direction: column;
 }
+
 .search-form {
   max-width: 460px;
   width: 100%;
   display: flex;
   margin: 0 auto 32px;
+  order: -1;
 }
+
 .search-form button {
   outline: none;
   background-color: inherit;
@@ -60,10 +66,12 @@ input {
   border-radius: 0.35em 0 0 0.35em;
   outline: none;
 }
+
 .main-nav li {
   width: 100%;
   margin-bottom: 1em;
 }
+
 .main-nav a {
   display: block;
   background: #438bbd;
@@ -71,11 +79,13 @@ input {
   padding: 5px;
   color: #fff;
 }
+
 .main-nav .active,
 .main-nav a:hover,
 .search-form a:hover {
   background-color: #275270;
 }
+
 .photo-container ul {
   display: flex;
   flex-flow: row wrap;
@@ -83,20 +93,24 @@ input {
   -ms-align-items: flex-start;
   align-items: flex-start;
 }
+
 .photo-container ul li {
   width: 220px;
   height: 165px;
   overflow: hidden;
   margin-bottom: 15px;
 }
+
 .photo-container ul img {
   width: 100%;
   transform: scale(1.25);
   transition: transform 1.25s;
 }
+
 .photo-container li:hover img {
   transform: scale(1.65);
 }
+
 .photo-container .not-found {
   width: 100%;
 }
