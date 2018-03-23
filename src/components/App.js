@@ -8,11 +8,12 @@ import Results from "./Results";
 const App = () => (
   <BrowserRouter>
     <div className="container">
+      <SearchForm />
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/search/" component={SearchForm} />
-        <Route exact path="/search/:query" component={Results} />
+        <Route exact path="/search/" component={Results} />
+        <Route path="/search/:query" component={Results} />
         <Route
           render={() => (
             <h2>404 error: URL does not match any existing paths!</h2>
